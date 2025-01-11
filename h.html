@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password with Icon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .password-container {
+            position: relative;
+            width: 300px;
+        }
+        .password-container input {
+            width: 100%;
+            padding: 10px;
+            padding-right: 40px; /* Space for the icon */
+            font-size: 16px;
+        }
+        .password-container span {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="password-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <span id="togglePassword">👁️</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const passwordInput = document.getElementById('password');
+            const togglePasswordIcon = document.getElementById('togglePassword');
+
+            togglePasswordIcon.addEventListener('click', () => {
+                const currentType = passwordInput.getAttribute('type');
+                passwordInput.setAttribute('type', currentType === 'password' ? 'text' : 'password');
+                togglePasswordIcon.textContent = currentType === 'password' ? '👁️' : '🙈';
+            });
+        });
+    </script>
+</body>
+</html>

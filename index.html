@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonPlannet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <<<<---bootstrap link->>>>  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <<<<---icon-font->>>>  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+
+    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/neon-planner-logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="navbar-items">
+                        <ul class="list-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="product1.html">Customize
+                            </li>
+                            <li>
+                                Neon Sign <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
+                                <ul class="dropdown service">
+                                    <li><a href="startup.html">Business Specific</a></li>
+                                    <li><a href="companyIn.html">Home Decor</a></li>
+                                    <li><a href="Registration.html">Event & Celebrations</a></li>
+                                    <li><a href="GSTworks.html">Inspirational & Quotes</a></li>
+                                    <li><a href="Taxfilling.html">Custom Design</a></li>
+                                    <li><a href="certification.html">Seasonal Themes</a></li>
+                                    <li><a href="mandcompli.html"> Hobbies & Interests</a></li>
+                                    <li><a href="annualCom.html">Outdoor & Commercial</a></li>
+                                    <li><a href="website.html">Artistic & Abstract</a></li>
+                                    <li><a href="website.html">Religious & Cultural</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="#" id="adminNav" style="display: none;">Admin</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="btn">
+                        <!-- Search Bar -->
+                        <div class="search-bar">
+                            <i class="fas fa-search" onkeyup="filterProjects(this.value)"></i>
+                        </div>
+                        <div class="shopping-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div>
+                           <a href="./auth-signin.html"><i class="fas fa-user user-icon"></i></a> 
+                        </div>
+                        <div>
+                        <!-- <p id="logout">Log out</p> -->
+                         <button style="color: brown; display: none;" id="logoutButton">logout</button>
+                        </div>
+                    </div>
+                    <!-- Mobile Toggle Button -->
+                    <div class="navbar-toggle" id="navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<------mainbox->>>>>>>> -->
+    <div class="main">
+        <div class="product-slider-section">
+            <div class="slider-container">
+                <h1 class="slider-header"> 𝓑𝓮𝓼𝓽 𝓢𝓮𝓵𝓵𝓮𝓻 𝓟𝓻𝓸𝓭𝓾𝓬𝓽𝓼</h1>
+                <div class="product-slider-wrapper" id="product-slider-wrapper">
+                    <!-- Product Cards -->
+                    <a href="product1.html">
+                        <div class="product-card">
+                            <img src="img/Bed-Room.jpeg" alt="Product 1">
+                            <h4>Neon Sign Board</h4>
+                            <div class="rating">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <span>
+                                    (89)
+                                </span>
+                            </div>
+                            <p class="old-price">
+                                Rs. 1,699.00
+                            </p>
+                            <p class="price">
+                                From Rs. 1,049.00
+                            </p>
+                            <button class="whatsapp-btn-click">click for customizations</button>
+                        </div>
+                    </a>
+                    <div class="product-card" data-price="1049" data-image="img/img2.jpg">
+                        <img src="img/img2.jpg" alt="Product 2">
+                        <h4>3D Illusion Lamp</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+
+                    <div class="product-card" data-price="1049" data-image="img/img3.jpg">
+                        <img src="img/img3.jpg" alt="Product 3">
+                        <h4>Custom Neon Light</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <span>
+                                (89)
+                            </span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+                    <div class="product-card" data-price="1049" data-image="img/img3.jpg">
+                        <img src="img/img3.jpg" alt="Product 4">
+                        <h4>Pizza Neon Sign</h4>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <span>
+                                (89)
+                            </span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+                    <div class="product-card" data-price="1049" data-image="img/img4.jpg">
+                        <img src="img/img4.jpg" alt="Product 5">
+                        <h4>Wooden World Map</h4>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <span>
+                                (89)
+                            </span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+                    <div class="product-card" data-price="1049" data-image="img/img5.jpg">
+                        <img src="img/img5.jpg" alt="Product 6">
+                        <h4>Spoiled Monkey Art</h4>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <span>
+                                (89)
+                            </span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+                    <div class="product-card" data-price="1049" data-image="img/img6.jpg">
+                        <img src="img/img6.jpg" alt="Product 7">
+                        <h4>LED Line Art</h4>
+                        <div class="rating">
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <i class="fas fa-star">
+                            </i>
+                            <span>
+                                (89)
+                            </span>
+                        </div>
+                        <p class="old-price">Rs. 1,699.00</p>
+                        <p class="price">From Rs. 1,049.00</p>
+                        <button class="whatsapp-btn">Order on WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- Pagination and Arrows -->
+                <!-- <div class="pagination-controls">
+                    <button class="arrow-btn" id="prev-btn">&lt;</button>
+                    <span id="pagination">1 / 5</span>
+                    <button class="arrow-btn" id="next-btn">&gt;</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------mainboxEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<whyneonplanner>>>> -->
+    <div class="container">
+        <div class="row">
+            <h1>Why <span>Neon Planet?</span></h1>
+            <div class="features">
+                <div class="col-sm-12 feature-main">
+                    <div class="col-sm-6 feature-respo-main">
+                        <div class="feature world-class">
+                            <img src="img/why_bg_one.avif" alt="">
+                            <i class="fas fa-award"></i>
+                            <p>Two year warranty</p>
+                        </div>
+                        <div class="feature world-class">
+                            <img src="img/why_bg_two.avif" alt="">
+                            <i class="fas fa-shipping-fast"></i>
+                            <p>Free + Fast shipping</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-respo-main">
+                        <div class="feature world-class">
+                            <img src="img/why_bg_one.avif" alt="">
+                            <i class="fas fa-gem"></i>
+                            <p>Premium quality</p>
+                        </div>
+                        <div class="feature world-class">
+                            <img src="img/why_bg_three.avif" alt="">
+                            <i class="fas fa-bolt"></i>
+                            <p>Power-efficient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 feature-main">
+                    <div class="col-sm-6 feature-respo-main">
+                        <div class="feature world-class">
+                            <img src="img/why_bg_one.avif" alt="">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <p>World-class craftsmanship</p>
+                        </div>
+                        <div class="feature world-class">
+                            <img src="img/why_bg_two.avif" alt="">
+                            <i class="fas fa-pencil-alt"></i>
+                            <p>Easy customizations</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-respo-main">
+                        <div class="feature world-class">
+                            <img src="img/why_bg_one.avif" alt="">
+                            <i class="fas fa-users"></i>
+                            <p>100% customer satisfaction rate</p>
+                        </div>
+                        <div class="feature world-class">
+                            <img src="img/why_bg_three.avif" alt="">
+                            <i class="fas fa-tools"></i>
+                            <p>2 Min Installation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <<<<<<<<<<<<<<<whyneonEnd>>>>>>>>>>>> -->
+
+
+    <!-- <<<<<<<<<<<<------popart->>>>>>>> -->
+
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <h1 class="slider-header">𝓟𝓸𝓹 𝓐𝓻𝓽</h1>
+            <div class="product-slider-wrapper" id="product-slider-wrapper">
+                <!-- Product Cards -->
+                <div class="product-card">
+                    <img src="img/img7.jpg" alt="Product 1">
+                    <h4>Neon Art Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/img8.jpg" alt="Product 2">
+                    <h4>3D Illusion Lamp</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ChillPill4_1300x_5e12a775-aa89-49b5-bd8e-750714713fae.webp" alt="Product 3">
+                    <h4>Custom Neon Light</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Bed-Room.jpeg" alt="Product 4">
+                    <h4>Pizza Neon Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/BearAcrylicArtwork3_1300x_77a18b25-f62f-40cd-b5aa-12fa02e814c8.webp" alt="Product 5">
+                    <h4>Wooden World Map</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/84_inches.webp" alt="Product 6">
+                    <h4>Spoiled Monkey Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/36monkey.webp" alt="Product 7">
+                    <h4>LED Line Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination and Arrows -->
+            <!-- <div class="pagination-controls">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 5</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------popartEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<------neonwings->>>>>>>> -->
+
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <h1 class="slider-header"> 𝓝𝓮𝓸𝓷 𝓦𝓲𝓷𝓰𝓼 </h1>
+            <div class="product-slider-wrapper" id="product-slider-wrapper">
+                <!-- Product Cards -->
+                <div class="product-card">
+                    <img src="img/picture1.webp" alt="Product 1">
+                    <h4>Neon Art Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ghdi.webp" alt="Product 2">
+                    <h4>3D Illusion Lamp</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ChillPill4_1300x_5e12a775-aa89-49b5-bd8e-750714713fae.webp" alt="Product 3">
+                    <h4>Custom Neon Light</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Bed-Room.jpeg" alt="Product 4">
+                    <h4>Pizza Neon Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/BearAcrylicArtwork3_1300x_77a18b25-f62f-40cd-b5aa-12fa02e814c8.webp" alt="Product 5">
+                    <h4>Wooden World Map</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/84_inches.webp" alt="Product 6">
+                    <h4>Spoiled Monkey Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/36monkey.webp" alt="Product 7">
+                    <h4>LED Line Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination and Arrows -->
+            <!-- <div class="pagination-controls">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 7</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------neonwingsEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<------illusionlamps->>>>>>>> -->
+
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <h1 class="slider-header">𝓘𝓵𝓵𝓾𝓼𝓲𝓸𝓷 𝓛𝓪𝓶𝓹𝓼</h1>
+            <div class="product-slider-wrapper" id="product-slider-wrapper">
+                <!-- Product Cards -->
+                <div class="product-card">
+                    <img src="img/picture1.webp" alt="Product 1">
+                    <h4>Neon Art Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ghdi.webp" alt="Product 2">
+                    <h4>3D Illusion Lamp</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ChillPill4_1300x_5e12a775-aa89-49b5-bd8e-750714713fae.webp" alt="Product 3">
+                    <h4>Custom Neon Light</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Bed-Room.jpeg" alt="Product 4">
+                    <h4>Pizza Neon Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/BearAcrylicArtwork3_1300x_77a18b25-f62f-40cd-b5aa-12fa02e814c8.webp" alt="Product 5">
+                    <h4>Wooden World Map</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/84_inches.webp" alt="Product 6">
+                    <h4>Spoiled Monkey Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/36monkey.webp" alt="Product 7">
+                    <h4>LED Line Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination and Arrows -->
+            <!-- <div class="pagination-controls">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 7</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------illusionlampsEnd->>>>>>>> -->
+
+
+
+    <!-- <<<<<<<<<<<<------mostadvancedlight->>>>>>>> -->
+
+    <div class="container">
+        <div class="title">
+            World's Most Advanced
+            <span>
+                NeonLight
+            </span>
+        </div>
+        <div class="feature-list">
+            <div class="feature-item mt">
+                <img alt="Color Changeable Icon" height="60" src="img/a-01.webp" width="60" />
+                <div class="feature-title">
+                    Color Changeable
+                </div>
+                <div class="feature-subtitle">
+                    Technology
+                </div>
+            </div>
+            <div class="feature-item mt">
+                <img alt="Flow Modes Icon" height="60" src="img/a-02.webp" width="60" />
+                <div class="feature-title">
+                    200+
+                </div>
+                <div class="feature-subtitle">
+                    flow modes
+                </div>
+            </div>
+            <div class="feature-item mt">
+                <img alt="Speed Control Icon" height="60" src="img/a-03.webp" width="60" />
+                <div class="feature-title">
+                    Complete
+                </div>
+                <div class="feature-subtitle">
+                    speed control
+                </div>
+            </div>
+            <div class="feature-item mt">
+                <img alt="Smartphone Control Icon" height="60" src="img/a-04.webp" width="60" />
+                <div class="feature-title">
+                    Smartphone
+                </div>
+                <div class="feature-subtitle">
+                    app control
+                </div>
+            </div>
+            <div class="feature-item mt">
+                <img alt="Customizable Icon" height="60" src="img/a-05.webp" width="60" />
+                <div class="feature-title">
+                    Fully
+                </div>
+                <div class="feature-subtitle">
+                    customizable
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------mostadvancedlightEnd->>>>>>>> -->
+
+
+
+    <!-- <<<<<<<<<<<<------exclusiveproducts->>>>>>>> -->
+
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <h1 class="slider-header">𝑬𝒙𝒄𝒍𝒖𝒔𝒊𝒗𝒆 𝑷𝒓𝒐𝒅𝒖𝒄𝒕𝒔</h1>
+            <div class="product-slider-wrapper" id="product-slider-wrapper">
+                <!-- Product Cards -->
+                <div class="product-card">
+                    <img src="img/picture1.webp" alt="Product 1">
+                    <h4>Neon Art Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ghdi.webp" alt="Product 2">
+                    <h4>3D Illusion Lamp</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/ChillPill4_1300x_5e12a775-aa89-49b5-bd8e-750714713fae.webp" alt="Product 3">
+                    <h4>Custom Neon Light</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Bed-Room.jpeg" alt="Product 4">
+                    <h4>Pizza Neon Sign</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/BearAcrylicArtwork3_1300x_77a18b25-f62f-40cd-b5aa-12fa02e814c8.webp" alt="Product 5">
+                    <h4>Wooden World Map</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/picture1.webp" alt="Product 6">
+                    <h4>Spoiled Monkey Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img src="img/36monkey.webp" alt="Product 7">
+                    <h4>LED Line Art</h4>
+                    <div class="rating">
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <span>
+                            (89)
+                        </span>
+                    </div>
+                    <p class="old-price">
+                        Rs. 1,699.00
+                    </p>
+                    <p class="price">
+                        From Rs. 1,049.00
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination and Arrows -->
+            <!-- <div class="pagination-controls">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 7</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <<<<<<<<<<<<------exclusiveproductsend->>>>>>>> -->
+    <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="section-footer">
+                    <div class="row">
+                        <div class="col-sm-12 d-flex">
+                            <div class="col-sm-3 f-points">
+                                <h3>Useful Links</h3>
+                                <div class="links">
+                                    <ul class="menu">
+                                        <li>Home</li>
+                                        <li>Customize</li>
+                                        <li>Neon Sign</li>
+                                        <li>Contact Us</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-sm-3 f-points">
+                                    <h3>Neon Sign</h3>
+                                    <div class="links">
+                                        <ul class="menu">
+                                            <li> Business Specific</li>
+                                            <li>Home Decor</li>
+                                            <li>Event & Celebrations</li>
+                                            <li>Inspirational & Quotes</li>
+                                            <li>Custom Design</li>
+                                            <li> Seasonal Themes</li>
+                                            <li>Hobbies & Interests</li>
+                                            <li>Outdoors & Commercial</li>
+                                            <li>Artistic & Abstract</li>
+                                            <li>Religious & Cultural</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-sm-3 f-points">
+                                    <h3>Top Services</h3>
+                                    <div class="links">
+                                        <ul class="menu">
+                                            <li>Best Seller Products </li>
+                                            <li>Why Neon Attack</li>
+                                            <li> Illusion Lamps</li>
+                                            <li> Exclusive Products</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 secution">
+                                <img src="/img/neon-planner-logo-removebg-preview.png" alt="">
+                                <div class="fsocial">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li> <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li> <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a></li>
+                                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="pay-now-btn">
+                                    <a href="#" class="pay-now-a">Pay Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="footer-end">
+                <p>Copyright ©
+                    <label for="" class="Footer-span">2024</label>
+                    <b>Neon Planet</b>
+                    . All Rights Reserved. | Design and Developed By
+                    <a href="">TechBro24</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="./api/autj-logout.js"></script>
+
+
+
+        <script src="./api/check-token.js"></script>
+         <script src="./api/auth-sigin-signup.api.js"></script> 
+
+        
+</body>
+
+</html>

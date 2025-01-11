@@ -1,0 +1,372 @@
+@media (max-width: 768px) {
+    .navbar-items {
+        display: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        position: fixed;
+        background-color: #212121;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        margin-left: 97px;
+        width: 147px;
+    }
+
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        margin-right: 200px;
+        margin-top: -8px;
+        font-size: 35px;
+        z-index: 1001;
+    }
+
+    
+
+    .navbar-toggle:hover {
+        color: #fff;
+    }
+
+    .navbar-items.show {
+        display: flex;
+    }
+
+    .list-items {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 100px;
+    }
+
+    .dropdown {
+        left: 0;
+        width: 100%;
+        top: 3%;
+    }
+
+    .service {
+        top: 46%;
+        margin-top: -119px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .product-card {
+        width:300px;
+    }
+}
+@media (max-width: 992px) {
+    .product-item {
+        width: 250%;
+    }
+}
+@media (max-width: 768px) {
+    .product-item {
+        width: 190px;
+    }
+}
+@media (max-width: 576px) {
+    .product-card {
+        width: 150px;
+        margin-right: 10px;
+    }
+    
+    .product-card h4 {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .product-card {
+        text-align: justify;
+        margin: 10px 0;
+    }
+
+    
+    .price {
+        font-size: 16px;
+    }
+
+    .rating {
+        font-size: 14px;
+        line-height: 1;
+        text-align: justify;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .section-footer .d-flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .col-sm-3 {
+        flex: 1 1 45%;
+        max-width: 45%;
+        margin: 10px 0;
+    }
+
+    .f-points h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-3 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .f-points ul {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .secution img {
+        max-width: 200px;
+    }
+
+    .fsocial li {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .pay-now-btn {
+        font-size: 13px;
+        padding: 6px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .f-points h3 {
+        font-size: 12px;
+    }
+
+    .pay-now-btn {
+        padding: 5px 16px;
+    }
+
+    .fsocial {
+        margin-left: -40px;
+    }
+
+    .fsocial li {
+        margin: 3px;
+    }
+
+    .footer-end {
+        font-size: 12px;
+    }
+}
+
+
+
+/* Responsive Layout for .product1 Section */
+@media (max-width: 768px) {
+    .product1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preview-area {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .controls {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Adjust Image and Text for Smaller Screens */
+@media (max-width: 576px) {
+    .preview-area img {
+        width: 90%;
+    }
+
+    .neon-display {
+        font-size: 28px;
+    }
+
+    .size-btn,
+    .font-buttons button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    #textInput {
+        width: 90%;
+    }
+
+    .add-to-cart h3 {
+        width: 80%;
+    }
+}
+
+/* Adjust Thumbnails */
+@media (max-width: 768px) {
+    .four-images {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .four-images img {
+        width: 70px;
+    }
+}
+
+/* Responsive Layout for Shipping Section */
+@media (max-width: 768px) {
+    .shipping {
+        
+        gap: 15px;
+    }
+
+    .shipping div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Customer Reviews Section Responsiveness */
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .overall-rating,
+    .breakdown-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .breakdown-section  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rating-bar {
+        align-items: flex-start;
+    }
+    .write-review-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .customer-photos img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Reduce Font Sizes for Smaller Screens */
+@media (max-width: 576px) {
+    .controls h1,
+    .controls h3,
+    .controls h4,
+    .controls h5 {
+        font-size: 16px;
+    }
+
+    .rating span,
+    .order-details p {
+        font-size: 14px;
+    }
+    .reviwes {
+        flex-direction: column;
+    }
+   
+}
+
+/* Adjust Details Section */
+@media (max-width: 768px) {
+    .order-details summary {
+        font-size: 18px;
+    }
+
+  
+    .dropdown-icon {
+        margin-left: 241px;
+    }
+    
+    .dropdown-icon2 {
+        margin-left: 151px;
+    }
+    
+    .dropdown-icon3 {
+        margin-left: 208px;
+    }
+}
+
+/* WhatsApp and Floating Icons Responsiveness */
+@media (max-width: 576px) {
+    .whatsapp-icon-order {
+        width: 90%;
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .feature-main {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .feature-respo-main {
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .world-class {
+        width: 160px !important;
+        flex-direction: column;
+    }
+
+    .world-class img {
+        width: 70px;
+    }
+
+    .feature p {
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 21px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .feature i {
+        margin-left: -2px;
+        font-size: 34px;
+        margin-top: -53px;
+    }
+
+}
