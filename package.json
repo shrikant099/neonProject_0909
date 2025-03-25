@@ -1,0 +1,22 @@
+{
+  "name": "neonplannetxyz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "product1.js",
+  "scripts": {
+    "start": "node ./backend/main.js",
+    "dev": "nodemon ./backend/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrikant099/neonProject_0909.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shrikant099/neonProject_0909/issues"
+  },
+  "homepage": "https://github.com/shrikant099/neonProject_0909#readme"
+}
